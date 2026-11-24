@@ -1,0 +1,134 @@
+/* Estilos gerais */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fb;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #1d5fd1;
+  color: #ffffff;
+  text-align: center;
+  padding: 32px 16px;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2rem;
+}
+
+header p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Área principal: os cards ficam lado a lado e quebram linha em telas menores */
+main {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+/* Cards */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #d5deeb;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #1d5fd1;
+}
+
+/* Formulário */
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #b8c4d6;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: 3px solid #9ec0f5;
+}
+
+button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #1d5fd1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #154aa8;
+}
+
+/* Área de resultado (fica escondida enquanto estiver vazia) */
+.resultado {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #e8f0fd;
+  border-left: 4px solid #1d5fd1;
+}
+
+.resultado:empty {
+  display: none;
+}
+
+.resultado p {
+  margin: 4px 0;
+}
+
+/* Mensagem de erro */
+.resultado.erro {
+  background-color: #fdeaea;
+  border-left-color: #c62828;
+  color: #8a1c1c;
+}
+
+.aviso {
+  font-size: 0.8rem;
+  color: #5b6677;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 0.85rem;
+  color: #5b6677;
+}
