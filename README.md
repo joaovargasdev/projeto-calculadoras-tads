@@ -16,6 +16,7 @@ O site possui três calculadoras:
 - **Calculadora de TMB:** estima a Taxa Metabólica Basal considerando sexo, idade, peso e altura.
 - **Calculadora de Salário Líquido:** calcula o salário após a aplicação dos descontos informados.
 
+
 ## Tecnologias utilizadas
 
 - HTML5 – Estruturação do conteúdo.
